@@ -2,7 +2,7 @@
 
 ## Goal and boundaries
 
-This repository is being prepared for product work. The product goal and technical stack have not been defined yet. Keep this orchestration foundation small, readable, and easy to extend; do not infer or implement product features without a task.
+This repository is being prepared for product work. The product goal has not been defined yet. Technology preferences are recorded in `docs/javascript-typescript-stack.md`; the application's stack and architecture remain undecided. Start with `docs/README.md` for documentation ownership and relevant context. Keep this orchestration foundation small, readable, and easy to extend; do not infer or implement product features without a task.
 
 - `AGENTS.md` holds stable rules shared by every agent.
 - `.agents/` holds role-specific instructions.

@@ -2,11 +2,12 @@
 
 ## Current Phase
 
-Orchestration foundation ready; awaiting a product goal.
+Orchestration and documentation foundations ready; awaiting a product goal.
 
 ## Progress
 
 - [x] Establish shared instructions, agent roles, and coordination directories.
+- [x] Establish documentation ownership, product/requirement drafts, architecture baseline, ADR guidance, and engineering/testing conventions. Entry point: `docs/README.md`.
 
 ## Active Tasks
 
@@ -14,7 +15,7 @@ None.
 
 ## Blockers
 
-None. No product goal or technical stack has been specified.
+No active task blockers. Product implementation awaits the open questions in `docs/product/PRD.md`. Technology preferences exist; the application stack is not yet selected.
 
 ## Latest Decision
 
