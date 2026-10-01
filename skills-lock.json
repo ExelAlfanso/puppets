@@ -1,6 +1,12 @@
 {
   "version": 1,
   "skills": {
+    "ai-qa-review": {
+      "source": "petrkindlmann/qa-skills",
+      "sourceType": "github",
+      "skillPath": "skills/ai-qa-review/SKILL.md",
+      "computedHash": "d84ba6e24bd695303d4976bc0fefbd351a9273573acb2c732611f0e38f6a0a8b"
+    },
     "backend-architect": {
       "source": "agent-skills-hub/agent-skills-hub",
       "sourceType": "github",
@@ -19,6 +25,12 @@
       "skillPath": "skills/backend-security-coder/SKILL.md",
       "computedHash": "e03e797d3ce105b32d2c7ee2fc352c3630093c8a5019c3e834a945057ced4988"
     },
+    "coverage-analysis": {
+      "source": "petrkindlmann/qa-skills",
+      "sourceType": "github",
+      "skillPath": "skills/coverage-analysis/SKILL.md",
+      "computedHash": "6ff231d68b6a7f239ae465809dd02e3793ea87f12d63722be5877e33610cf887"
+    },
     "create-adaptable-composable": {
       "source": "vuejs-ai/skills",
       "sourceType": "github",
@@ -36,6 +48,24 @@
       "sourceType": "github",
       "skillPath": "skills/nodejs-backend-patterns/SKILL.md",
       "computedHash": "85b8899e30d4529f1f1ccf4b7e25ad76604f974e585013544fc9fd32feb25976"
+    },
+    "qa-project-context": {
+      "source": "petrkindlmann/qa-skills",
+      "sourceType": "github",
+      "skillPath": "skills/qa-project-context/SKILL.md",
+      "computedHash": "681cdbd9d5a41f84c9110e71b8017f981e11c4844a190e32f3a4c694a2be55c5"
+    },
+    "release-readiness": {
+      "source": "petrkindlmann/qa-skills",
+      "sourceType": "github",
+      "skillPath": "skills/release-readiness/SKILL.md",
+      "computedHash": "7c9fe785e99bd4b242f3b9dfe1f9985fe2d591e4c90f52d02fffc954db2ff28e"
+    },
+    "risk-based-testing": {
+      "source": "petrkindlmann/qa-skills",
+      "sourceType": "github",
+      "skillPath": "skills/risk-based-testing/SKILL.md",
+      "computedHash": "5277a3ca7e311a95bc3f4b69d5795396a52cbb735ce7382080f32823a3dd1e32"
     },
     "vercel-composition-patterns": {
       "source": "vercel-labs/agent-skills",
