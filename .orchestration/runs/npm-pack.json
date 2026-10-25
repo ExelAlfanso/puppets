@@ -1,0 +1,1741 @@
+﻿[
+  {
+    "id": "@exelalfanso/puppets-orchestration@0.1.0",
+    "name": "@exelalfanso/puppets-orchestration",
+    "version": "0.1.0",
+    "size": 453275,
+    "unpackedSize": 1545199,
+    "shasum": "24ebc3cd5d199e289d5c0b0ac6e4a048570d493b",
+    "integrity": "sha512-7Mq6SdgBhgI2w4g1fmJSz/Ad13bi2tT3J7mdZqJu4CoyyYLiME5y05vcNmGA+LLmkUyrCqZxx09cgKFcPYB0uw==",
+    "filename": "exelalfanso-puppets-orchestration-0.1.0.tgz",
+    "files": [
+      {
+        "path": ".agents/architect.md",
+        "size": 819,
+        "mode": 420
+      },
+      {
+        "path": ".agents/backend.md",
+        "size": 1015,
+        "mode": 420
+      },
+      {
+        "path": ".agents/debugger.md",
+        "size": 794,
+        "mode": 420
+      },
+      {
+        "path": ".agents/explorer.md",
+        "size": 714,
+        "mode": 420
+      },
+      {
+        "path": ".agents/frontend.md",
+        "size": 1026,
+        "mode": 420
+      },
+      {
+        "path": ".agents/orchestrator.md",
+        "size": 2151,
+        "mode": 420
+      },
+      {
+        "path": ".agents/reviewer.md",
+        "size": 1983,
+        "mode": 420
+      },
+      {
+        "path": ".agents/tester.md",
+        "size": 768,
+        "mode": 420
+      },
+      {
+        "path": ".agents/worker-skills.md",
+        "size": 2109,
+        "mode": 420
+      },
+      {
+        "path": "AGENTS.md",
+        "size": 4678,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 8072,
+        "mode": 420
+      },
+      {
+        "path": "bin/puppets.mjs",
+        "size": 7880,
+        "mode": 420
+      },
+      {
+        "path": "docs/architecture/decisions/README.md",
+        "size": 1435,
+        "mode": 420
+      },
+      {
+        "path": "docs/architecture/overview.md",
+        "size": 2347,
+        "mode": 420
+      },
+      {
+        "path": "docs/engineering/conventions.md",
+        "size": 2568,
+        "mode": 420
+      },
+      {
+        "path": "docs/engineering/project-orchestration.md",
+        "size": 6046,
+        "mode": 420
+      },
+      {
+        "path": "docs/engineering/testing-strategy.md",
+        "size": 2758,
+        "mode": 420
+      },
+      {
+        "path": "docs/javascript-typescript-stack.md",
+        "size": 3977,
+        "mode": 420
+      },
+      {
+        "path": "docs/product/PRD.md",
+        "size": 1889,
+        "mode": 420
+      },
+      {
+        "path": "docs/README.md",
+        "size": 5238,
+        "mode": 420
+      },
+      {
+        "path": "docs/requirements/SRS.md",
+        "size": 1964,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 955,
+        "mode": 420
+      },
+      {
+        "path": "skills-lock.json",
+        "size": 5496,
+        "mode": 420
+      },
+      {
+        "path": "skills/be/backend-architect/SKILL.md",
+        "size": 19176,
+        "mode": 420
+      },
+      {
+        "path": "skills/be/backend-development-feature-development/SKILL.md",
+        "size": 11380,
+        "mode": 420
+      },
+      {
+        "path": "skills/be/backend-security-coder/SKILL.md",
+        "size": 10010,
+        "mode": 420
+      },
+      {
+        "path": "skills/be/nodejs-backend-patterns/resources/implementation-playbook.md",
+        "size": 25662,
+        "mode": 420
+      },
+      {
+        "path": "skills/be/nodejs-backend-patterns/SKILL.md",
+        "size": 1430,
+        "mode": 420
+      },
+      {
+        "path": "skills/fe/frontend-design/LICENSE.txt",
+        "size": 10351,
+        "mode": 420
+      },
+      {
+        "path": "skills/fe/frontend-design/SKILL.md",
+        "size": 9461,
+        "mode": 420
+      },
+      {
+        "path": "skills/fe/web-design-guidelines/SKILL.md",
+        "size": 1270,
+        "mode": 420
+      },
+      {
+        "path": "skills/qa/ai-qa-review/references/mutation-testing.md",
+        "size": 2356,
+        "mode": 420
+      },
+      {
+        "path": "skills/qa/ai-qa-review/references/smell-examples.md",
+        "size": 7621,
+        "mode": 420
+      },
+      {
+        "path": "skills/qa/ai-qa-review/references/testability-refactors.md",
+        "size": 4192,
+        "mode": 420
+      },
+      {
+        "path": "skills/qa/ai-qa-review/SKILL.md",
+        "size": 22255,
+        "mode": 420
+      },
+      {
+        "path": "skills/qa/coverage-analysis/references/ci-gating.md",
+        "size": 4075,
+        "mode": 420
+      },
+      {
+        "path": "skills/qa/coverage-analysis/references/mutation-testing.md",
+        "size": 912,
+        "mode": 420
+      },
+      {
+        "path": "skills/qa/coverage-analysis/references/tool-config.md",
+        "size": 5126,
+        "mode": 420
+      },
+      {
+        "path": "skills/qa/coverage-analysis/SKILL.md",
+        "size": 19171,
+        "mode": 420
+      },
+      {
+        "path": "skills/qa/qa-project-context/references/examples.md",
+        "size": 9072,
+        "mode": 420
+      },
+      {
+        "path": "skills/qa/qa-project-context/SKILL.md",
+        "size": 16053,
+        "mode": 420
+      },
+      {
+        "path": "skills/qa/release-readiness/references/communication-templates.md",
+        "size": 963,
+        "mode": 420
+      },
+      {
+        "path": "skills/qa/release-readiness/references/rollout-automation.md",
+        "size": 2066,
+        "mode": 420
+      },
+      {
+        "path": "skills/qa/release-readiness/SKILL.md",
+        "size": 27260,
+        "mode": 420
+      },
+      {
+        "path": "skills/qa/risk-based-testing/references/examples.md",
+        "size": 4128,
+        "mode": 420
+      },
+      {
+        "path": "skills/qa/risk-based-testing/SKILL.md",
+        "size": 21771,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-composition-patterns/AGENTS.md",
+        "size": 23573,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-composition-patterns/README.md",
+        "size": 2200,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-composition-patterns/rules/_sections.md",
+        "size": 858,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-composition-patterns/rules/_template.md",
+        "size": 353,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md",
+        "size": 2367,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-composition-patterns/rules/architecture-compound-components.md",
+        "size": 2712,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-composition-patterns/rules/patterns-children-over-render-props.md",
+        "size": 1973,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-composition-patterns/rules/patterns-explicit-variants.md",
+        "size": 2495,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-composition-patterns/rules/react19-no-forwardref.md",
+        "size": 995,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-composition-patterns/rules/state-context-interface.md",
+        "size": 5165,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-composition-patterns/rules/state-decouple-implementation.md",
+        "size": 2812,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-composition-patterns/rules/state-lift-state.md",
+        "size": 3349,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-composition-patterns/SKILL.md",
+        "size": 2975,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/AGENTS.md",
+        "size": 112071,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/README.md",
+        "size": 3483,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/_sections.md",
+        "size": 1600,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/_template.md",
+        "size": 659,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/advanced-effect-event-deps.md",
+        "size": 1858,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/advanced-event-handler-refs.md",
+        "size": 1538,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/advanced-init-once.md",
+        "size": 1000,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/advanced-use-latest.md",
+        "size": 1111,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/async-api-routes.md",
+        "size": 1163,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/async-cheap-condition-before-await.md",
+        "size": 1257,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/async-defer-await.md",
+        "size": 2290,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/async-dependencies.md",
+        "size": 1344,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/async-parallel.md",
+        "size": 682,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/async-suspense-boundaries.md",
+        "size": 2609,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/bundle-analyzable-paths.md",
+        "size": 2445,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/bundle-barrel-imports.md",
+        "size": 2855,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/bundle-conditional.md",
+        "size": 980,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/bundle-defer-third-party.md",
+        "size": 969,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/bundle-dynamic-imports.md",
+        "size": 826,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/bundle-preload.md",
+        "size": 1199,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/client-event-listeners.md",
+        "size": 2043,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/client-localstorage-schema.md",
+        "size": 2021,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/client-passive-event-listeners.md",
+        "size": 1692,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/client-swr-dedup.md",
+        "size": 1215,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/js-batch-dom-css.md",
+        "size": 3373,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/js-cache-function-results.md",
+        "size": 2029,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/js-cache-property-access.md",
+        "size": 560,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/js-cache-storage.md",
+        "size": 1721,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/js-combine-iterations.md",
+        "size": 785,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/js-early-exit.md",
+        "size": 1183,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/js-flatmap-filter.md",
+        "size": 1471,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/js-hoist-regexp.md",
+        "size": 1073,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/js-index-maps.md",
+        "size": 874,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/js-length-check-first.md",
+        "size": 1796,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/js-min-max-loop.md",
+        "size": 2372,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/js-request-idle-callback.md",
+        "size": 2752,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/js-set-map-lookups.md",
+        "size": 556,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/js-tosorted-immutable.md",
+        "size": 1839,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rendering-activity.md",
+        "size": 590,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md",
+        "size": 1232,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rendering-conditional-render.md",
+        "size": 1020,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rendering-content-visibility.md",
+        "size": 853,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rendering-hoist-jsx.md",
+        "size": 1085,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md",
+        "size": 2390,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md",
+        "size": 902,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rendering-resource-hints.md",
+        "size": 2634,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rendering-script-defer-async.md",
+        "size": 1936,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rendering-svg-precision.md",
+        "size": 616,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rendering-usetransition-loading.md",
+        "size": 2149,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rerender-defer-reads.md",
+        "size": 1012,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rerender-dependencies.md",
+        "size": 869,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md",
+        "size": 1241,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rerender-derived-state.md",
+        "size": 757,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rerender-functional-setstate.md",
+        "size": 3042,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rerender-lazy-state-init.md",
+        "size": 2074,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rerender-memo-with-default-value.md",
+        "size": 1211,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rerender-memo.md",
+        "size": 1192,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rerender-move-effect-to-event.md",
+        "size": 1313,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rerender-no-inline-components.md",
+        "size": 2217,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md",
+        "size": 1053,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rerender-split-combined-hooks.md",
+        "size": 1908,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rerender-transitions.md",
+        "size": 1095,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rerender-use-deferred-value.md",
+        "size": 1905,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md",
+        "size": 1815,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/server-after-nonblocking.md",
+        "size": 2085,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/server-auth-actions.md",
+        "size": 2745,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/server-cache-lru.md",
+        "size": 1394,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/server-cache-react.md",
+        "size": 2304,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/server-dedup-props.md",
+        "size": 2125,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/server-hoist-static-io.md",
+        "size": 4572,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/server-no-shared-module-state.md",
+        "size": 1816,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/server-parallel-fetching.md",
+        "size": 1637,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/server-parallel-nested-fetching.md",
+        "size": 1026,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/rules/server-serialization.md",
+        "size": 1034,
+        "mode": 420
+      },
+      {
+        "path": "skills/react/vercel-react-best-practices/SKILL.md",
+        "size": 7400,
+        "mode": 420
+      },
+      {
+        "path": "skills/README.md",
+        "size": 960,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/create-adaptable-composable/SKILL.md",
+        "size": 2748,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/animation-class-based-technique.md",
+        "size": 5280,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/animation-state-driven-technique.md",
+        "size": 6120,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/component-async.md",
+        "size": 2629,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/component-data-flow.md",
+        "size": 7263,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/component-fallthrough-attrs.md",
+        "size": 4221,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/component-keep-alive.md",
+        "size": 3624,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/component-slots.md",
+        "size": 4685,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/component-suspense.md",
+        "size": 5595,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/component-teleport.md",
+        "size": 3029,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/component-transition-group.md",
+        "size": 3132,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/component-transition.md",
+        "size": 2847,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/composables.md",
+        "size": 7301,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/directives.md",
+        "size": 3965,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/perf-avoid-component-abstraction-in-lists.md",
+        "size": 4842,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/perf-v-once-v-memo-directives.md",
+        "size": 4951,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/perf-virtualize-large-lists.md",
+        "size": 5189,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/plugins.md",
+        "size": 4048,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/reactivity.md",
+        "size": 8796,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/render-functions.md",
+        "size": 4067,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/sfc.md",
+        "size": 6526,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/state-management.md",
+        "size": 3515,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/references/updated-hook-performance.md",
+        "size": 4805,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-best-practices/SKILL.md",
+        "size": 8957,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/animation-key-for-rerender.md",
+        "size": 4761,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/animation-transitiongroup-performance.md",
+        "size": 6095,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/async-component-error-handling.md",
+        "size": 3406,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/async-component-keepalive-ref-issue.md",
+        "size": 3006,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/async-component-suspense-control.md",
+        "size": 2251,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/async-component-vue-router.md",
+        "size": 3002,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/attrs-event-listener-merging.md",
+        "size": 4912,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/checkbox-true-false-value-form-submission.md",
+        "size": 3623,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/cleanup-side-effects.md",
+        "size": 4515,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/click-events-on-components.md",
+        "size": 4910,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/component-naming-conflicts.md",
+        "size": 4620,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/component-ref-requires-defineexpose.md",
+        "size": 4380,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/composable-avoid-hidden-side-effects.md",
+        "size": 6075,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/composable-call-location-restrictions.md",
+        "size": 5044,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/composable-naming-return-pattern.md",
+        "size": 4133,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/composable-tovalue-inside-watcheffect.md",
+        "size": 5398,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/composition-api-not-functional-programming.md",
+        "size": 4016,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/composition-api-script-setup-async-context.md",
+        "size": 5563,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/composition-api-vs-react-hooks-differences.md",
+        "size": 5065,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/computed-array-mutation.md",
+        "size": 4520,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/computed-conditional-dependencies.md",
+        "size": 4526,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/computed-no-parameters.md",
+        "size": 4649,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/computed-no-side-effects.md",
+        "size": 3396,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/computed-return-value-readonly.md",
+        "size": 4256,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/configure-app-before-mount.md",
+        "size": 2865,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/declare-emits-for-documentation.md",
+        "size": 5333,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/define-expose-before-await.md",
+        "size": 4480,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/define-model-default-value-sync.md",
+        "size": 4185,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/defineEmits-must-be-top-level.md",
+        "size": 4320,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/defineEmits-no-runtime-and-type-mixed.md",
+        "size": 4512,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/definemodel-object-mutation-no-emit.md",
+        "size": 4251,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/dom-update-timing-nexttick.md",
+        "size": 2881,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/dynamic-argument-constraints.md",
+        "size": 4479,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/dynamic-component-registration-vite.md",
+        "size": 4403,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/event-modifier-order-matters.md",
+        "size": 2916,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/exact-modifier-for-precise-shortcuts.md",
+        "size": 4523,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/fallthrough-attrs-overwrite-vue3.md",
+        "size": 4071,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/in-dom-template-parsing-caveats.md",
+        "size": 4679,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/inheritattrs-false-for-wrapper-components.md",
+        "size": 4745,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/keepalive-router-nested-double-mount.md",
+        "size": 5333,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/keepalive-transition-memory-leak.md",
+        "size": 3718,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/keyup-modifier-timing.md",
+        "size": 4434,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/lifecycle-dom-access-timing.md",
+        "size": 5402,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/lifecycle-hooks-synchronous-registration.md",
+        "size": 4075,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/lifecycle-ssr-awareness.md",
+        "size": 5298,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/local-components-not-in-descendants.md",
+        "size": 3923,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/mount-return-value.md",
+        "size": 2779,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/multi-root-component-class-attrs.md",
+        "size": 2530,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/native-event-collision-with-emits.md",
+        "size": 4718,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/no-passive-with-prevent.md",
+        "size": 3948,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/no-v-if-with-v-for.md",
+        "size": 4065,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/perf-computed-object-stability.md",
+        "size": 4929,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/perf-props-stability-update-optimization.md",
+        "size": 3960,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/plugin-global-properties-sparingly.md",
+        "size": 3580,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/plugin-install-before-mount.md",
+        "size": 3339,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/plugin-prefer-provide-inject-over-global-properties.md",
+        "size": 3555,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/plugin-typescript-type-augmentation.md",
+        "size": 4336,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/prop-defineprops-scope-limitation.md",
+        "size": 3878,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/provide-inject-debugging-challenges.md",
+        "size": 5854,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/provide-inject-default-value-factory.md",
+        "size": 5934,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/provide-inject-reactivity-not-automatic.md",
+        "size": 5359,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/provide-inject-synchronous-setup.md",
+        "size": 5406,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/reactive-destructuring.md",
+        "size": 2761,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/reactivity-debugging-hooks.md",
+        "size": 4455,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/reactivity-markraw-for-non-reactive.md",
+        "size": 4819,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/reactivity-proxy-identity-hazard.md",
+        "size": 3140,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/reactivity-same-tick-batching.md",
+        "size": 4695,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/ref-value-access.md",
+        "size": 2160,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/refs-in-collections-need-value.md",
+        "size": 3110,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/render-function-avoid-internal-vnode-properties.md",
+        "size": 4521,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/render-function-vnodes-must-be-unique.md",
+        "size": 3658,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/rendering-render-function-h-import-vue3.md",
+        "size": 3496,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/rendering-render-function-return-from-setup.md",
+        "size": 3788,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/rendering-render-function-slots-as-functions.md",
+        "size": 4303,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/rendering-resolve-component-for-string-names.md",
+        "size": 5968,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/select-initial-value-ios-bug.md",
+        "size": 3214,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/self-referencing-component-name.md",
+        "size": 3891,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/sfc-named-exports-forbidden.md",
+        "size": 4607,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/sfc-scoped-css-child-component-styling.md",
+        "size": 3897,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/sfc-scoped-css-dynamic-content.md",
+        "size": 4655,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/sfc-scoped-css-slot-content.md",
+        "size": 4926,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/sfc-script-setup-reactivity.md",
+        "size": 5254,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/slot-forwarding-to-child-components.md",
+        "size": 4162,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/slot-implicit-default-content.md",
+        "size": 3623,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/slot-name-reserved-prop.md",
+        "size": 2890,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/slot-named-scoped-explicit-default.md",
+        "size": 3102,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/slot-render-scope-parent-only.md",
+        "size": 3787,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/slot-v-slot-on-components-or-templates-only.md",
+        "size": 3203,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/ssr-hydration-mismatch-causes.md",
+        "size": 7225,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/ssr-platform-specific-apis.md",
+        "size": 7181,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/state-ssr-cross-request-pollution.md",
+        "size": 7378,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/suspense-no-builtin-error-handling.md",
+        "size": 3137,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/suspense-ssr-hydration-issues.md",
+        "size": 4460,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/tailwind-dynamic-class-generation.md",
+        "size": 3301,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/teleport-scoped-styles-limitation.md",
+        "size": 4096,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/teleport-ssr-hydration.md",
+        "size": 3933,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/teleport-target-must-exist.md",
+        "size": 3417,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/template-expressions-restrictions.md",
+        "size": 3557,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/template-functions-no-side-effects.md",
+        "size": 5380,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/template-ref-null-with-v-if.md",
+        "size": 3146,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/template-ref-unwrapping-top-level.md",
+        "size": 3239,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/template-ref-v-for-order.md",
+        "size": 4719,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/textarea-no-interpolation.md",
+        "size": 2370,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/transition-group-flip-inline-elements.md",
+        "size": 4173,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/transition-group-move-animation-position-absolute.md",
+        "size": 3877,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/transition-group-no-default-wrapper-vue3.md",
+        "size": 4155,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/transition-js-hooks-done-callback.md",
+        "size": 6415,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/transition-nested-duration.md",
+        "size": 5179,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/transition-reusable-scoped-style.md",
+        "size": 5535,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/transition-router-view-appear.md",
+        "size": 5123,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/transition-type-when-mixed.md",
+        "size": 4591,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/transition-unmount-hook-timing.md",
+        "size": 4458,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/ts-defineprops-boolean-default-false.md",
+        "size": 5757,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/ts-defineprops-imported-types-limitations.md",
+        "size": 6298,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/ts-event-handler-explicit-typing.md",
+        "size": 6158,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/ts-reactive-no-generic-argument.md",
+        "size": 5041,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/ts-shallowref-for-dynamic-components.md",
+        "size": 6299,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/ts-template-ref-null-handling.md",
+        "size": 5603,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/ts-template-type-casting.md",
+        "size": 5310,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/ts-withdefaults-mutable-factory-function.md",
+        "size": 4812,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/undeclared-emits-double-firing.md",
+        "size": 5168,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/use-template-ref-vue35.md",
+        "size": 4443,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/v-else-must-follow-v-if.md",
+        "size": 4098,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/v-for-component-props.md",
+        "size": 2716,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/v-for-computed-reverse-sort.md",
+        "size": 2929,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/v-for-key-attribute.md",
+        "size": 3334,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/v-for-range-starts-at-one.md",
+        "size": 2330,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/v-if-null-check-order.md",
+        "size": 4476,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/v-model-ignores-html-attributes.md",
+        "size": 2602,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/v-model-ime-composition.md",
+        "size": 2980,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/v-model-number-modifier-behavior.md",
+        "size": 3817,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/v-show-template-limitation.md",
+        "size": 3759,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/watch-async-cleanup.md",
+        "size": 4614,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/watch-async-creation-memory-leak.md",
+        "size": 4309,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/watch-deep-same-object-reference.md",
+        "size": 4609,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/watch-flush-timing.md",
+        "size": 5227,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/watch-reactive-property-getter.md",
+        "size": 3125,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/watcheffect-async-dependency-tracking.md",
+        "size": 4818,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/reference/watcheffect-flush-post-for-refs.md",
+        "size": 4452,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-debug-guides/SKILL.md",
+        "size": 21060,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-jsx-best-practices/reference/render-function-jsx-vue-vs-react.md",
+        "size": 4215,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-jsx-best-practices/SKILL.md",
+        "size": 405,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-options-api-best-practices/reference/no-arrow-functions-in-lifecycle-hooks.md",
+        "size": 3012,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-options-api-best-practices/reference/no-arrow-functions-in-methods.md",
+        "size": 2102,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-options-api-best-practices/reference/stateful-methods-lifecycle.md",
+        "size": 1984,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-options-api-best-practices/reference/ts-options-api-arrow-functions-validators.md",
+        "size": 4832,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-options-api-best-practices/reference/ts-options-api-computed-return-types.md",
+        "size": 5116,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-options-api-best-practices/reference/ts-options-api-proptype-complex-types.md",
+        "size": 5121,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-options-api-best-practices/reference/ts-options-api-provide-inject-limitations.md",
+        "size": 3477,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-options-api-best-practices/reference/ts-options-api-type-event-handlers.md",
+        "size": 5784,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-options-api-best-practices/reference/ts-options-api-use-definecomponent.md",
+        "size": 4862,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-options-api-best-practices/reference/ts-strict-mode-options-api.md",
+        "size": 5037,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-options-api-best-practices/SKILL.md",
+        "size": 1870,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-pinia-best-practices/reference/pinia-no-active-pinia-error.md",
+        "size": 6655,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-pinia-best-practices/reference/pinia-setup-store-return-all-state.md",
+        "size": 6162,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-pinia-best-practices/reference/pinia-store-destructuring-breaks-reactivity.md",
+        "size": 5385,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-pinia-best-practices/reference/state-url-for-ephemeral-filters.md",
+        "size": 7463,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-pinia-best-practices/reference/state-use-pinia-for-large-apps.md",
+        "size": 6652,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-pinia-best-practices/reference/store-method-binding-parentheses.md",
+        "size": 5500,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-pinia-best-practices/SKILL.md",
+        "size": 1191,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-router-best-practices/reference/router-beforeenter-no-param-trigger.md",
+        "size": 5083,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-router-best-practices/reference/router-beforerouteenter-no-this.md",
+        "size": 5198,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-router-best-practices/reference/router-guard-async-await-pattern.md",
+        "size": 6126,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-router-best-practices/reference/router-navigation-guard-infinite-loop.md",
+        "size": 5678,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-router-best-practices/reference/router-navigation-guard-next-deprecated.md",
+        "size": 4427,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-router-best-practices/reference/router-param-change-no-lifecycle.md",
+        "size": 5242,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-router-best-practices/reference/router-simple-routing-cleanup.md",
+        "size": 5558,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-router-best-practices/reference/router-use-vue-router-for-production.md",
+        "size": 5506,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-router-best-practices/SKILL.md",
+        "size": 1515,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-testing-best-practices/reference/async-component-testing.md",
+        "size": 5059,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-testing-best-practices/reference/teleport-testing-complexity.md",
+        "size": 4294,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-testing-best-practices/reference/testing-async-await-flushpromises.md",
+        "size": 5429,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-testing-best-practices/reference/testing-browser-vs-node-runners.md",
+        "size": 5831,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-testing-best-practices/reference/testing-component-blackbox-approach.md",
+        "size": 4897,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-testing-best-practices/reference/testing-composables-helper-wrapper.md",
+        "size": 6357,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-testing-best-practices/reference/testing-e2e-playwright-recommended.md",
+        "size": 6823,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-testing-best-practices/reference/testing-no-snapshot-only.md",
+        "size": 6480,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-testing-best-practices/reference/testing-pinia-store-setup.md",
+        "size": 6477,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-testing-best-practices/reference/testing-suspense-async-components.md",
+        "size": 6677,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-testing-best-practices/reference/testing-vitest-recommended-for-vue.md",
+        "size": 5243,
+        "mode": 420
+      },
+      {
+        "path": "skills/vue/vue-testing-best-practices/SKILL.md",
+        "size": 2158,
+        "mode": 420
+      },
+      {
+        "path": "skills/worker/caveman/README.md",
+        "size": 1946,
+        "mode": 420
+      },
+      {
+        "path": "skills/worker/caveman/SKILL.md",
+        "size": 6303,
+        "mode": 420
+      },
+      {
+        "path": "skills/worker/ponytail/SKILL.md",
+        "size": 6757,
+        "mode": 420
+      },
+      {
+        "path": "skills/worker/README.md",
+        "size": 744,
+        "mode": 420
+      },
+      {
+        "path": "templates/state.md",
+        "size": 266,
+        "mode": 420
+      }
+    ],
+    "entryCount": 345,
+    "bundled": []
+  }
+]

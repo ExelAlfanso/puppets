@@ -12,6 +12,8 @@ This repository is being prepared for product work. The product goal has not bee
 
 ## Orchestration protocol
 
+For work in a separate project repository, select an explicit repository/checkout and keep all task state in that checkout's `.orchestration/`. Bootstrap only missing local state and add `/.orchestration/` to the target project's `.gitignore`; preserve existing state and ignore rules. Shared roles remain in the orchestration workspace, while durable project requirements and decisions belong to the target repo's `docs/` and `AGENTS.md`. Follow `docs/engineering/project-orchestration.md` for bootstrap, worktree isolation, and ignore verification. Do not mix project task state with this workspace's own coordination state.
+
 The orchestrator owns the user goal, task graph, assignments, acceptance decisions, and final report. It writes a focused task file in `.orchestration/tasks/` before delegating substantial work. Each task states why it exists, inputs, allowed and forbidden scope, expected outputs, dependencies, verification method, and measurable acceptance criteria. Give agents this file, their role file, these shared rules, and only the relevant source and docs.
 
 For work spanning multiple tasks, identify task nodes and dependencies before assignment. The task files' `depends_on` fields define the execution graph; a compact diagram in `state.md` may help humans read it. Give each worker only its assigned part and the outputs of completed dependencies. The worker records actual outputs, changed files, checks, and deviations. The orchestrator compares that report with the task's expected work and verifies any deviation before acceptance.
@@ -21,6 +23,8 @@ Tasks move through `pending → ready → in_progress → verification → done`
 The worker reports its output and evidence but cannot alone mark its task `done`. The orchestrator checks acceptance criteria and requests deterministic verification and independent review when appropriate. Prefer relevant tests, lint, typecheck, build, and browser or API checks over unsupported claims. Record actual commands and outcomes. If verification fails, return actionable feedback; after repeated failures, use a debugger, then an architect for design issues, and escalate unresolved decisions to the user. Do not retry without new evidence.
 
 ## Working rules
+
+- Ponytail and Caveman apply only to frontend/backend implementation workers and explicitly assigned worker agents. Follow `.agents/worker-skills.md` for activation and reporting. Do not apply these modes to the orchestrator or other specialist roles, and do not expose their snapshots through `.agents/skills/`.
 
 - Stay within assigned file ownership. Ask the orchestrator to change scope or dependencies before editing outside it.
 - Do not overwrite user work or existing documentation. Keep source changes tied to the active task.

@@ -1,35 +1,39 @@
 # Testing Strategy
 
-Status: Strategi awal; repository belum memiliki aplikasi, test runner, build scripts, atau CI checks. Tidak ada command tes atau hasil produk yang diklaim tersedia.
+Status: Initial product strategy; no application or CI checks exist. Workspace CLI tooling has tests using Node.js's built-in test runner. Product test tooling has not been selected.
+
+## Workspace Tooling Verification
+
+Run `node --test tests/cli.test.mjs` from the source repository. CLI tests cover workspace bootstrap without Git history, preservation of existing files/progress on repeat setup, per-repository state isolation, ignore rules, and rejection of tracked coordination state. Tests use temporary directories rather than user project repositories.
 
 ## Testing Goals
 
-Verifikasi [acceptance criteria SRS](../requirements/SRS.md) secara deterministik dan sesuai risiko. Fokus pada perilaku observable, jalur error, serta boundary data/akses. Hindari tes yang hanya menyalin detail implementasi.
+Verify [SRS acceptance criteria](../requirements/SRS.md) deterministically and according to risk. Focus on observable behavior, error paths, and data/access boundaries. Avoid tests that merely repeat implementation details.
 
-## Pemilihan Jenis Tes
+## Selecting Test Types
 
-| Jenis | Gunakan untuk |
+| Type | Use for |
 | --- | --- |
-| Unit | Logika domain murni dan kasus boundary yang tidak membutuhkan layanan nyata |
-| Integration | Perilaku antar modul serta interaksi database/auth saat komponen itu tersedia |
-| Contract | Kesesuaian schema, request/response, dan error lintas client/server; typing API saja tidak menggantikan validasi runtime |
-| End-to-end | Flow utama pengguna dan kegagalan penting yang disepakati di PRD/SRS |
-| Performance | Target terukur di requirement performance; jangan menetapkan budget atau load profile tanpa kebutuhan |
+| Unit | Pure domain logic and boundary cases that need no real services |
+| Integration | Behavior between modules and database/auth interactions when those components exist |
+| Contract | Schema, request/response, and error consistency across client/server boundaries; API typing does not replace runtime validation |
+| End-to-end | Primary user flows and important failures agreed in the PRD/SRS |
+| Performance | Measurable performance requirements; establish budgets and load profiles from actual needs |
 
-Tidak semua perubahan membutuhkan semua jenis tes. Pilih verifikasi yang memberi bukti terhadap requirement yang terdampak.
+Not every change needs every test type. Select verification that provides evidence for affected requirements.
 
 ## Traceability
 
-SRS menyimpan link requirement → task/kode/tes ketika tersedia. Nama atau deskripsi tes dapat menyertakan ID requirement agar bukti mudah ditelusuri. Saat requirement berubah, perbarui acceptance criteria dan tes terkait bersama implementasi.
+The SRS stores requirement → task/code/test links when available. Test names or descriptions may include requirement IDs to make evidence easy to find. Update acceptance criteria and related tests with implementation when requirements change.
 
 ## Test Environment
 
-Tooling dan konfigurasi: TBD setelah framework dipilih. Tes harus memiliki data terisolasi, mengendalikan waktu/randomness jika berpengaruh, dan membersihkan state. Gunakan fixture yang tidak berisi data atau secret production.
+Product test tooling and configuration are TBD after framework selection. Isolate test data, control time/randomness when relevant, and clean up state. Fixtures must not contain production data or secrets.
 
 ## Required CI Checks
 
-Belum ada CI yang dikonfigurasi. Pada implementasi pertama, tetapkan command yang benar-benar tersedia untuk lint/format, typecheck, build, dan tes relevan, lalu catat command dan syarat lulus di sini. Jangan menyebut checks sebagai wajib/aktif sebelum workflow-nya tersedia.
+No CI is configured. During initial application implementation, select available lint/format, typecheck, build, and test commands and record their passing criteria here. Mark checks required/active only once their workflows exist.
 
-## Verifikasi Dokumentasi
+## Documentation Verification
 
-Untuk perubahan dokumentasi, cek link lokal, konsistensi sumber kebenaran, ID, dan kesesuaian klaim dengan repository. Runtime tests tidak diperlukan untuk perubahan dokumentasi saja. Evidence sementara disimpan di `.orchestration/`, bukan ditambahkan sebagai fakta produk permanen.
+For documentation changes, check local links, source-of-truth consistency, IDs, and accuracy against the repository. Documentation-only changes do not require runtime tests. Keep temporary evidence in `.orchestration/` rather than treating it as a permanent product fact.

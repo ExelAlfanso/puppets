@@ -1,56 +1,56 @@
 # Product Requirements Document
 
-Status: Draft — intent produk belum ditentukan. Nama repository dan role agent bukan bukti fitur produk. Dokumen ini menjadi tempat menyepakati tujuan sebelum implementasi.
+Status: Draft — product intent has not been defined. The repository name and agent roles do not establish product features. Use this document to agree on goals before implementation.
 
 ## Overview
 
-TBD: ringkasan produk dan nilai yang diberikan. Repository saat ini disiapkan untuk pekerjaan produk; lihat [kondisi teknis](../architecture/overview.md).
+TBD: product summary and the value it provides. The repository is being prepared for product work; see the [technical baseline](../architecture/overview.md).
 
 ## Problem Statement
 
-TBD: masalah pengguna, dampaknya, dan bagaimana masalah diselesaikan saat ini.
+TBD: the user problem, its impact, and how it is currently addressed.
 
 ## Target Users
 
-TBD: pengguna utama, konteks penggunaan, dan pihak yang mengambil keputusan.
+TBD: primary users, their usage context, and decision makers.
 
 ## User Needs
 
-TBD: kebutuhan pengguna yang didukung bukti atau persetujuan pemilik produk.
+TBD: needs supported by evidence or product owner approval.
 
 ## Product Goals
 
-Belum ada tujuan produk yang disetujui. Saat disepakati, beri ID `PG-001` dan seterusnya sesuai [aturan ID](../README.md#id-dan-traceability).
+No product goals have been accepted. Assign agreed goals IDs such as `PG-001` according to the [ID rules](../README.md#ids-and-traceability).
 
 ## Non-Goals
 
-TBD: batas scope yang secara eksplisit disepakati untuk rilis pertama.
+TBD: scope boundaries explicitly agreed for the first release.
 
 ## Core Features
 
-TBD: fitur yang diperlukan untuk mencapai tujuan, beserta prioritas dan hubungan ke ID tujuan.
+TBD: features needed to achieve the goals, their priorities, and related goal IDs.
 
 ## User Flows
 
-TBD: flow utama, kondisi awal, hasil sukses, dan hasil kegagalan yang relevan bagi pengguna.
+TBD: primary flows, starting conditions, successful outcomes, and relevant failure outcomes.
 
 ## Success Criteria
 
-TBD: hasil yang terukur untuk tiap tujuan; tentukan ukuran keberhasilan, target, dan cara mengevaluasinya.
+TBD: measurable outcomes for each goal, including the measure, target, and evaluation method.
 
 ## Constraints
 
-TBD: batas waktu, anggaran, kebutuhan pengguna, atau batas bisnis. Pilihan teknis dimiliki arsitektur/ADR, bukan PRD.
+TBD: deadlines, budget, user needs, or business limits. Architecture and ADRs own technical choices.
 
 ## Assumptions
 
-Belum ada asumsi produk yang diterima. Catat asumsi beserta cara mengujinya sebelum digunakan sebagai dasar scope.
+No product assumptions have been accepted. Record assumptions and how to validate them before using them to define scope.
 
 ## Open Questions
 
-- Masalah apa yang ingin diselesaikan dan siapa pengguna utamanya?
-- Apa satu flow utama yang harus berhasil pada MVP?
-- Apa scope rilis pertama dan fitur yang ditunda?
-- Bagaimana keberhasilan diukur, dan apakah ada batas waktu atau anggaran?
+- What problem should be solved, and who are the primary users?
+- Which primary flow must succeed in the MVP?
+- What belongs in the first release, and which features are deferred?
+- How will success be measured, and are there deadlines or budget limits?
 
-Setelah dijawab, turunkan tujuan ke [SRS](../requirements/SRS.md); jangan memasukkan endpoint atau schema database di sini.
+Translate the answers into [SRS](../requirements/SRS.md) requirements. Keep endpoint and database schema decisions in their owning technical documents.

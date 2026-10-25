@@ -1,59 +1,59 @@
-# Stack JavaScript dan TypeScript
+# JavaScript and TypeScript Stack
 
-Status: preferensi pengguna untuk project JavaScript/TypeScript, dengan Rust melalui Tauri sebagai backend untuk aplikasi desktop besar; stack aplikasi project ini belum dipilih. Keputusan final yang memiliki trade-off penting dicatat di [ADR](architecture/decisions/README.md). Boundary aplikasi dimiliki [architecture overview](architecture/overview.md).
+Status: user preferences for JavaScript/TypeScript projects, with Rust through Tauri as the backend for large desktop applications. This project's application stack has not been selected. Record final decisions with meaningful trade-offs in [ADRs](architecture/decisions/README.md). The [architecture overview](architecture/overview.md) owns application boundaries.
 
-Ini stack pilihan untuk project JavaScript dan TypeScript. Pilih framework sesuai ukuran dan kompleksitas project; tidak semua project perlu memakai seluruh komponen di bawah.
+Choose frameworks according to project size and complexity. Not every project needs every component below.
 
-## Backend Rust melalui Tauri
+## Rust Backend Through Tauri
 
-Untuk project desktop besar, gunakan Tauri dengan Rust sebagai backend aplikasi. Frontend tetap menggunakan JavaScript/TypeScript dengan React atau Vue. Scope ini mencakup logika backend dan akses kemampuan native melalui Tauri; pilihan frontend mengikuti kebutuhan aplikasi desktop.
+For large desktop projects, use Tauri with Rust as the application backend. The frontend uses JavaScript/TypeScript with React or Vue. This covers backend logic and native capabilities through Tauri; frontend choices follow the desktop application's needs.
 
-Kontrak komunikasi frontend dengan backend Tauri: TBD saat arsitektur ditetapkan. ElysiaJS dan Eden Treaty berlaku saat project memiliki API server TypeScript. Bun dan pnpm digunakan untuk bagian JavaScript/TypeScript; konfigurasi build backend Rust/Tauri ditetapkan saat implementasi.
+The frontend/Tauri backend communication contract is TBD during architecture design. ElysiaJS and Eden Treaty apply when a project has a TypeScript API server. Bun and pnpm serve the JavaScript/TypeScript parts; Rust/Tauri build configuration is selected during implementation.
 
-## Tool utama
+## Core Tools
 
-| Area | Pilihan | Catatan |
+| Area | Choice | Notes |
 | --- | --- | --- |
-| Runtime | Bun | Runtime untuk menjalankan JavaScript dan TypeScript di sisi server. |
-| Package manager | pnpm | Gunakan pnpm untuk memasang dan mengelola dependency project. |
-| Backend API server | ElysiaJS | Untuk membangun API TypeScript, terutama saat memakai Bun. |
-| Backend desktop besar | Rust + Tauri | Backend aplikasi desktop dengan frontend JavaScript/TypeScript. |
-| Tipe API frontend/backend | Eden Treaty | Bagikan tipe route Elysia ke frontend agar pemanggilan API tetap type-safe. |
-| Validasi | Zod | Definisikan schema di batas input dan bagikan schema atau tipe inferensi antara backend dan frontend bila diperlukan. |
-| Autentikasi | Better Auth | Library autentikasi pilihan. |
-| Infrastructure as code | Alchemy | Tool IaC pilihan. |
-| Effects | Effect TS | Gunakan untuk typed effects dan penanganan error terstruktur saat pola ini membantu; kode sederhana tetap ditulis langsung. |
-| Pengiriman event/job ke workers | BullMQ | Antrean pekerjaan untuk mengantarkan event sebagai job ke workers. |
-| Penyimpanan antrean | Redis | Dependency BullMQ untuk menyimpan antrean dan state job. |
+| Runtime | Bun | Runtime for server-side JavaScript and TypeScript. |
+| Package manager | pnpm | Install and manage project dependencies with pnpm. |
+| API server backend | ElysiaJS | Build TypeScript APIs, especially when running on Bun. |
+| Large desktop backend | Rust + Tauri | Desktop application backend with a JavaScript/TypeScript frontend. |
+| Frontend/backend API types | Eden Treaty | Share Elysia route types with the frontend for typed API calls. |
+| Validation | Zod | Define schemas at input boundaries and share schemas or inferred types where needed. |
+| Authentication | Better Auth | Preferred authentication library. |
+| Infrastructure as code | Alchemy | Preferred IaC tool. |
+| Effects | Effect TS | Use for typed effects and structured error handling when helpful; keep simple code direct. |
+| Event/job delivery to workers | BullMQ | Queue events as jobs for background workers. |
+| Queue storage | Redis | BullMQ dependency for queue and job state storage. |
 
-## Event dan background workers
+## Events and Background Workers
 
-Gunakan BullMQ untuk pengiriman event/job asynchronous ke workers saat project membutuhkan pemrosesan background. Producer memasukkan event sebagai job ke antrean BullMQ yang disimpan di Redis; worker mengambil job dan memprosesnya. Model antrean ini mengikuti [dokumentasi BullMQ](https://docs.bullmq.io/guide/queues/).
+Use BullMQ for asynchronous event/job delivery to workers when background processing is needed. A producer adds an event as a job to a BullMQ queue stored in Redis; a worker picks up and processes the job. This follows the [BullMQ queue model](https://docs.bullmq.io/guide/queues/).
 
-Alur: producer → antrean BullMQ/Redis → worker.
+Flow: producer → BullMQ/Redis queue → worker.
 
-Schema payload, nama antrean, retry/backoff, idempotency, concurrency, serta penanganan job gagal: TBD sesuai kebutuhan produk. Jika producer berada di backend Rust/Tauri, boundary integrasinya dengan antrean BullMQ perlu ditetapkan saat arsitektur dipilih. Catat kontrak event dalam API contract dan keputusan integrasi yang memiliki trade-off penting dalam ADR.
+Payload schemas, queue names, retry/backoff, idempotency, concurrency, and failed-job handling are TBD according to product needs. If the producer runs in the Rust/Tauri backend, define its integration boundary with BullMQ during architecture design. Record event contracts in the API contract and integration decisions with meaningful trade-offs in ADRs.
 
-## Library UI
+## UI Libraries
 
 - React: shadcn/ui.
 - Vue: VUX.
 
-Open Question: identitas package dan versi VUX yang dimaksud perlu dipastikan sebelum implementasi Vue. Preferensi ini dipertahankan sesuai instruksi pengguna.
+Open Question: confirm the intended VUX package and version before implementing Vue. This preference is retained as requested by the user.
 
-## Pilihan database
+## Database Selection
 
-- SQLite untuk project kecil dan sederhana dengan kebutuhan relasi yang terbatas.
-- PostgreSQL untuk project kompleks, banyak entitas yang saling berelasi, atau query relasional yang berat.
+- SQLite for small, uncomplicated projects with limited relational needs.
+- PostgreSQL for complex projects, many related entities, or substantial relational queries.
 
-## Framework berdasarkan ukuran project
+## Frameworks by Project Size
 
-| Ukuran project | React | Vue | Arah build/framework |
+| Project size | React | Vue | Build/framework direction |
 | --- | --- | --- | --- |
-| Kecil sampai menengah | React + TanStack Router | Vue + Vue Router | Vite |
-| Web besar | TanStack Start | Nuxt | Pilih full-stack framework yang sesuai dengan ekosistem UI. |
-| Desktop besar | React | Vue | Frontend JavaScript/TypeScript + backend Rust melalui Tauri; integrasi build/router TBD. |
+| Small to medium | React + TanStack Router | Vue + Vue Router | Vite |
+| Large web application | TanStack Start | Nuxt | Select the full-stack framework for the chosen UI ecosystem. |
+| Large desktop application | React | Vue | JavaScript/TypeScript frontend + Rust backend through Tauri; build/router integration TBD. |
 
-## Panduan pemilihan
+## Selection Guidance
 
-Mulai dari setup paling sederhana yang memenuhi kebutuhan produk. Untuk aplikasi client-focused kecil atau menengah, gunakan Vite dan router sesuai framework yang dipilih. Untuk aplikasi besar yang membutuhkan server rendering dan konvensi full-stack, gunakan TanStack Start untuk React atau Nuxt untuk Vue.
+Start with the smallest setup that meets product needs. For small or medium client-focused applications, use Vite and the router for the chosen framework. For large web applications that need server rendering and full-stack conventions, use TanStack Start for React or Nuxt for Vue.

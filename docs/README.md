@@ -1,63 +1,64 @@
-# Dokumentasi Project
+# Project Documentation
 
-Dokumentasi ini menjadi sumber kebenaran untuk produk dan engineering. Status saat ini: fondasi repository; produk belum ditentukan dan belum ada aplikasi yang diimplementasikan. Preferensi teknologi sudah tersedia, tetapi stack aplikasi belum dipilih.
+These documents are the source of truth for product and engineering information. The repository currently provides a foundation; no product application has been implemented. Technology preferences exist, but the application stack has not been selected.
 
-## Sumber kebenaran
+## Sources of Truth
 
-| Informasi | Dokumen | Status |
+| Information | Document | Status |
 | --- | --- | --- |
-| Masalah, pengguna, tujuan, scope, hasil produk | [PRD](product/PRD.md) | Draft; keputusan produk TBD |
-| Perilaku software dan acceptance criteria | [SRS](requirements/SRS.md) | Draft; belum ada requirement produk yang disetujui |
-| Boundary dan tanggung jawab sistem | [Architecture overview](architecture/overview.md) | Kondisi repository tercatat; arsitektur produk TBD |
-| Preferensi teknologi | [Stack JavaScript/TypeScript](javascript-typescript-stack.md) | Termasuk backend Rust/Tauri untuk desktop besar; bukan stack aplikasi final |
-| Alasan keputusan teknis | [Indeks ADR](architecture/decisions/README.md) | Belum ada ADR aplikasi |
-| Struktur kode dan aturan engineering | [Conventions](engineering/conventions.md) | Baseline untuk implementasi pertama |
-| Pendekatan verifikasi | [Testing strategy](engineering/testing-strategy.md) | Strategi tersedia; tooling dan CI TBD |
+| Product problem, users, goals, scope, and outcomes | [PRD](product/PRD.md) | Draft; product decisions TBD |
+| Software behavior and acceptance criteria | [SRS](requirements/SRS.md) | Draft; no accepted product requirements |
+| System boundaries and responsibilities | [Architecture overview](architecture/overview.md) | Repository baseline recorded; product architecture TBD |
+| Technology preferences | [JavaScript/TypeScript stack](javascript-typescript-stack.md) | Includes Rust/Tauri backends for large desktop applications; application stack undecided |
+| Technical decision rationale | [ADR index](architecture/decisions/README.md) | No application ADRs yet |
+| Code structure and engineering standards | [Conventions](engineering/conventions.md) | Baseline for initial implementation |
+| Verification approach | [Testing strategy](engineering/testing-strategy.md) | Strategy available; product tooling and CI TBD |
+| Coordination setup per repository/checkout | [Project orchestration](engineering/project-orchestration.md) | Local state per project, required to be ignored by Git |
 
-Alur: tujuan PRD → requirement SRS → boundary arsitektur dan ADR → implementasi → tes → operasi. Keputusan teknologi tidak ditempatkan di PRD atau dijadikan requirement perilaku di SRS.
+Flow: PRD goals → SRS requirements → architecture boundaries and ADRs → implementation → tests → operations. Technology decisions belong in architecture and ADRs rather than product requirements.
 
-## Dokumen yang dibuat saat dibutuhkan
+## Documents Created When Needed
 
-| Dokumen | Buat ketika | Sumber implementasi yang harus dirujuk |
+| Document | Create when | Implementation source to reference |
 | --- | --- | --- |
-| `requirements/glossary.md` | Ada istilah domain yang perlu definisi bersama | PRD dan SRS |
-| `architecture/api-contract.md` | Ada interface yang akan digunakan komponen lain | Spec machine-readable atau tipe/schema kontrak; pilih saat arsitektur ditetapkan |
-| `architecture/erd.md` | Ada entitas domain persisten dan relasinya | Migrations untuk detail schema yang tepat |
-| `engineering/security.md` | Boundary data, autentikasi, otorisasi, atau integrasi sensitif sudah ditentukan | Requirement security di SRS; aturan awal ada di conventions |
-| `operations/deployment.md` | Target deployment dan proses rilis ditentukan | Konfigurasi build/IaC dan prosedur migration/rollback aktual |
-| `operations/runbook.md` | Ada layanan yang dioperasikan dan prosedur diagnosis/pemulihan | Health checks, logs, metrics, dan recovery yang benar-benar tersedia |
+| `requirements/glossary.md` | Domain terms require shared definitions | PRD and SRS |
+| `architecture/api-contract.md` | An interface will be consumed by another component | Machine-readable specification or contract types/schemas; select during architecture design |
+| `architecture/erd.md` | Persistent domain entities and relationships are defined | Migrations for exact schema details |
+| `engineering/security.md` | Data boundaries, authentication, authorization, or sensitive integrations are defined | Security requirements in SRS; initial rules are in conventions |
+| `operations/deployment.md` | Deployment targets and release procedures are selected | Actual build/IaC configuration and migration/rollback procedures |
+| `operations/runbook.md` | Services are operated and diagnosis/recovery procedures exist | Available health checks, logs, metrics, and recovery procedures |
 
-Tidak ada endpoint, entity, environment staging/production, queue, atau recovery procedure yang diasumsikan dari contoh dokumentasi. Informasi belum diketahui ditulis sebagai **TBD** atau **Open Question** di dokumen pemiliknya.
+Do not infer endpoints, entities, staging/production environments, queues, or recovery procedures from documentation examples. Mark unknown information as **TBD** or **Open Question** in its owning document.
 
-## ID dan traceability
+## IDs and Traceability
 
-- Tujuan produk: `PG-001`, `PG-002`, dan seterusnya, dimiliki PRD.
-- Requirement: `FR-<DOMAIN>-001` atau `NFR-<AREA>-001`; kategori `SEC`, `PERF`, `REL`, dan `OBS` boleh digunakan untuk kebutuhan spesifik.
-- Keputusan: `ADR-001`, `ADR-002`, dan seterusnya, sesuai [aturan ADR](architecture/decisions/README.md).
-- ID tetap stabil saat judul atau detail berubah. ID yang dihentikan tidak dipakai ulang.
-- Task implementasi di `.orchestration/tasks/` merujuk ID requirement, acceptance criteria, dan dokumen relevan. Task maintenance seperti setup dokumentasi boleh mencatat bahwa requirement produk belum berlaku.
-- SRS menghubungkan requirement ke tujuan PRD dan bukti implementasi/tes ketika tersedia; jangan membuat matriks duplikat di dokumen lain.
+- Product goals: `PG-001`, `PG-002`, and so on, owned by the PRD.
+- Requirements: `FR-<DOMAIN>-001` or `NFR-<AREA>-001`; use `SEC`, `PERF`, `REL`, and `OBS` for specific categories when useful.
+- Decisions: `ADR-001`, `ADR-002`, and so on, following the [ADR rules](architecture/decisions/README.md).
+- IDs remain stable when titles or details change. Retired IDs are not reused.
+- Implementation tasks in `.orchestration/tasks/` reference requirement IDs, acceptance criteria, and relevant documents. Maintenance tasks such as documentation setup may state that product requirements do not yet apply.
+- The SRS links requirements to PRD goals and implementation/test evidence when available. Avoid duplicating that matrix elsewhere.
 
-## Memuat konteks untuk manusia dan agent
+## Loading Context for Humans and Agents
 
-Gunakan [AGENTS.md](../AGENTS.md) dan role di `.agents/` untuk cara kerja agent. Setelah itu, pilih konteks sesuai pekerjaan:
+Use [AGENTS.md](../AGENTS.md) and roles in `.agents/` for agent working rules. Then select documentation according to the task:
 
-| Pekerjaan | Konteks dokumentasi |
+| Work | Documentation context |
 | --- | --- |
-| Product/planning | PRD, SRS, glossary ketika tersedia |
-| Architecture | SRS, overview, ADR relevan, preferensi stack |
-| Backend/data | Requirement terkait, kontrak API/ERD ketika tersedia, ADR, conventions, source/migrations terkait |
-| Frontend | Requirement terkait, kontrak API dan UI spec ketika tersedia, conventions, source terkait |
-| Testing/review | Task, ID requirement, acceptance criteria, constraint/ADR relevan, diff, hasil verifikasi |
+| Product/planning | PRD, SRS, glossary when available |
+| Architecture | SRS, overview, relevant ADRs, stack preferences |
+| Backend/data | Relevant requirements, API contract/ERD when available, ADRs, conventions, related source/migrations |
+| Frontend | Relevant requirements, API contract and UI specification when available, conventions, related source |
+| Testing/review | Task, requirement IDs, acceptance criteria, relevant constraints/ADRs, diff, verification results |
 
-Progress, assignment, dan run records disimpan hanya di `.orchestration/`. Dokumentasi ini menyimpan fakta dan keputusan yang bertahan setelah sebuah task selesai.
+Progress, assignments, and run records belong only in `.orchestration/`. Documentation retains facts and decisions that remain useful after a task ends.
 
-## Kebijakan pembaruan
+## Update Policy
 
-Perubahan harus memperbarui sumber kebenarannya bersama implementasi: perilaku → SRS dan tes; interface → kontrak dan tes; boundary → overview dan ADR jika trade-off penting; relasi data → migration dan ERD; rilis/recovery → dokumentasi operasi.
+Update each source of truth with its implementation change: behavior → SRS and tests; interfaces → contracts and tests; boundaries → overview and ADRs when trade-offs matter; data relationships → migrations and ERD; release/recovery → operations documentation.
 
-Jika dua dokumen bertentangan, catat konflik, gunakan dokumen pemilik untuk menyelesaikan keputusan, lalu koreksi dokumen yang terdampak. Jangan memilih salah satu secara diam-diam. Review perubahan harus memastikan link tetap valid dan dokumentasi menggambarkan kondisi aktual.
+When documents conflict, record the inconsistency, resolve it through the owning document, and correct affected documents. Do not silently select one account. Review changes for valid links and consistency with the implementation.
 
-## Langkah berikutnya
+## Next Step
 
-Isi [open questions PRD](product/PRD.md#open-questions) tentang masalah pengguna dan scope MVP. Turunkan tujuan yang disepakati menjadi requirement dengan acceptance criteria di SRS sebelum menetapkan arsitektur aplikasi.
+Answer the [PRD open questions](product/PRD.md#open-questions) about the user problem and MVP scope. Translate agreed goals into SRS requirements with acceptance criteria before selecting the application architecture.

@@ -16,6 +16,10 @@ Redesign frontend behavior or change shared contracts outside the task's authori
 
 Task file, relevant architecture and API contracts, backend source, configuration, and existing tests.
 
+## Worker Skills
+
+Load `.agents/worker-skills.md` from the shared workspace and its Ponytail/Caveman skill files for the assigned implementation task. Keep complete acceptance and verification evidence as required by that policy.
+
 ## Outputs
 
 Focused backend changes and a concise summary of files changed and checks run.

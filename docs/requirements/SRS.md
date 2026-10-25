@@ -1,35 +1,35 @@
 # Software Requirements Specification
 
-Status: Draft — belum ada requirement produk yang disetujui. SRS menerjemahkan [tujuan PRD](../product/PRD.md) menjadi perilaku software yang dapat diverifikasi.
+Status: Draft — no product requirements have been accepted. The SRS translates [PRD goals](../product/PRD.md) into verifiable software behavior.
 
 ## Functional Requirements
 
-TBD: perilaku software berdasarkan tujuan produk yang disepakati. Tidak ada requirement autentikasi, task execution, atau fitur lain yang diasumsikan dari skill atau role agent.
+TBD: software behavior based on agreed product goals. Do not infer authentication, task execution, or other features from installed skills or agent roles.
 
 ## Non-Functional Requirements
 
-TBD: target kualitas yang terukur sesuai risiko produk, termasuk security, performance, reliability, dan observability ketika relevan. Angka latency, kapasitas, availability, dan retention belum ditetapkan.
+TBD: measurable quality targets appropriate to product risk, including security, performance, reliability, and observability when relevant. Latency, capacity, availability, and retention targets have not been selected.
 
 ## Constraints
 
-TBD: batas operasional atau kompatibilitas yang wajib dipenuhi. [Preferensi stack](../javascript-typescript-stack.md) adalah masukan keputusan teknis, bukan requirement perilaku software.
+TBD: required operational or compatibility limits. [Stack preferences](../javascript-typescript-stack.md) inform technical decisions; they do not define software behavior requirements.
 
-## Format requirement dan traceability
+## Requirement Format and Traceability
 
-Gunakan [aturan ID](../README.md#id-dan-traceability). Setiap requirement berisi:
+Follow the [ID rules](../README.md#ids-and-traceability). Each requirement includes:
 
-| Field | Isi |
+| Field | Content |
 | --- | --- |
-| ID dan judul | ID stabil dan perilaku singkat |
-| Status | Draft, Accepted, atau Retired |
-| Dasar | Link ke tujuan `PG-*` atau constraint yang disetujui |
-| Perilaku | Apa yang harus dilakukan software, termasuk kondisi pemicu dan hasil |
-| Acceptance criteria | Hasil observable untuk jalur sukses, error, dan boundary yang relevan |
-| Verifikasi | Jenis tes dan kriteria lulus; link file/hasil ketika tersedia |
-| Implementasi | Link task, kode, dan kontrak relevan ketika tersedia; TBD selama belum diimplementasikan |
+| ID and title | Stable ID and a short description of the behavior |
+| Status | Draft, Accepted, or Retired |
+| Basis | Link to a `PG-*` goal or an accepted constraint |
+| Behavior | Required software behavior, including trigger conditions and outcomes |
+| Acceptance criteria | Observable results for success, errors, and relevant boundaries |
+| Verification | Test type and passing criteria; link to files/results when available |
+| Implementation | Related tasks, code, and contracts when available; TBD until implemented |
 
-Requirement non-fungsional harus menyebut ukuran, target, kondisi pengukuran, dan cara verifikasi. Istilah domain yang ambigu harus didefinisikan dalam glossary ketika diperlukan.
+Non-functional requirements must specify a measure, target, measurement conditions, and verification method. Define ambiguous domain terms in a glossary when needed.
 
 ## Open Questions
 
-Perilaku dan prioritas menunggu jawaban [PRD](../product/PRD.md#open-questions). Target kualitas dan batas akses/data ditentukan setelah flow utama diketahui. Pendekatan verifikasi ada di [testing strategy](../engineering/testing-strategy.md).
+Behavior and priorities await answers to the [PRD questions](../product/PRD.md#open-questions). Quality targets and data/access boundaries follow the primary flow definition. See the [testing strategy](../engineering/testing-strategy.md) for verification guidance.

@@ -1,38 +1,41 @@
 # Architecture Overview
 
-Status: Baseline repository — arsitektur aplikasi TBD. Dokumen ini mencatat boundary yang benar-benar ada dan menjadi tempat mencatat boundary produk setelah [SRS](../requirements/SRS.md) disepakati.
+Status: Repository baseline — application architecture TBD. This document records existing boundaries and will describe product boundaries once the [SRS](../requirements/SRS.md) is agreed.
 
 ## System Context
 
-Repository dipakai manusia dan AI coding agents untuk mempersiapkan pekerjaan software. Belum ada client aplikasi, API service, database, atau workload runtime yang diimplementasikan.
+Human developers and AI coding agents use this repository to prepare software work. No product client, API service, database, or application runtime workload has been implemented.
 
-## Major Components dan Responsibilities
+Workspace tooling is available as a Node.js CLI in `bin/puppets.mjs`. It creates a shared workspace and local state in a target repository. See the [workspace README](../../README.md) for usage.
 
-| Boundary repository | Tanggung jawab |
+## Major Components and Responsibilities
+
+| Repository boundary | Responsibility |
 | --- | --- |
-| `AGENTS.md` dan `.agents/*.md` | Aturan bersama dan role agent; bukan komponen runtime produk |
-| `docs/` | Intent, requirement, arsitektur, keputusan, dan panduan engineering yang bertahan |
-| `.orchestration/` | Task, dependensi, progress, dan run records sementara |
-| `skills/` | Referensi skill yang dikelompokkan; bukan dependency runtime aplikasi |
+| `AGENTS.md` and `.agents/*.md` | Shared rules and agent roles |
+| `docs/` | Durable product intent, requirements, architecture, decisions, and engineering guidance |
+| `.orchestration/` | Temporary tasks, dependencies, progress, and run records |
+| `skills/` | Categorized skill references |
+| `bin/` and `templates/` | Bootstrap CLI with no external runtime dependencies and fresh state templates |
 
-Boundary, service ownership, dan komunikasi aplikasi: TBD. Jangan menurunkan arsitektur produk dari daftar role agent.
+Application boundaries, service ownership, and communication are TBD. Agent roles do not define the product architecture.
 
 ## Data Flow
 
-Flow data aplikasi: TBD. Alur dokumentasi dan implementasi dijelaskan di [indeks dokumentasi](../README.md).
+Application data flow: TBD. The [documentation index](../README.md) describes the documentation and implementation flow.
 
 ## External Dependencies
 
-Dependensi aplikasi belum dipasang atau ditetapkan. Gunakan [preferensi stack](../javascript-typescript-stack.md) sebagai masukan; catat pilihan dengan trade-off penting melalui [ADR](decisions/README.md).
+Application dependencies have not been installed or selected. Use the [stack preferences](../javascript-typescript-stack.md) as input and record choices with meaningful trade-offs in [ADRs](decisions/README.md).
 
 ## Trust Boundaries
 
-Boundary client/server, identitas, izin akses, klasifikasi data, dan integrasi eksternal: TBD setelah scope produk diketahui. Aturan awal engineering ada di [conventions](../engineering/conventions.md).
+Client/server boundaries, identity, access permissions, data classification, and external integrations are TBD until product scope is defined. Initial engineering rules are in [conventions](../engineering/conventions.md).
 
 ## Deployment Model
 
-TBD: target hosting, proses aplikasi, dan environment. Belum ada staging, production, atau deployment pipeline yang didokumentasikan sebagai tersedia.
+TBD: hosting targets, application processes, and environments. No staging, production, or deployment pipeline is documented as available.
 
 ## Important Constraints
 
-Fondasi repo tetap kecil dan berbasis file sesuai [AGENTS.md](../../AGENTS.md). API contract dan ERD dibuat saat interface serta entitas persisten ditentukan, sesuai [pemicu dokumentasi](../README.md#dokumen-yang-dibuat-saat-dibutuhkan).
+Keep the repository foundation small and file-based, following [AGENTS.md](../../AGENTS.md). Create the API contract and ERD when interfaces and persistent entities are defined, following the [documentation triggers](../README.md#documents-created-when-needed).

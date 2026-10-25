@@ -1,36 +1,36 @@
 # Architecture Decision Records
 
-ADR menjelaskan alasan pilihan teknis yang memiliki trade-off penting, memengaruhi beberapa boundary, sulit dibalik, atau perlu dipahami pengembang berikutnya. Preferensi pengguna di [stack guide](../../javascript-typescript-stack.md) tetap berlaku sebagai masukan; belum ada pilihan stack aplikasi yang diubah menjadi ADR Accepted.
+ADRs explain technical choices with meaningful trade-offs, effects across several boundaries, costly reversals, or reasoning future developers need to understand. User preferences in the [stack guide](../../javascript-typescript-stack.md) remain decision inputs; no application stack choice has become an Accepted ADR.
 
 ## Register
 
-Belum ada ADR aplikasi. Tidak ada file contoh yang diperlakukan sebagai keputusan aktual.
+No application ADRs exist yet. Examples are not treated as actual decisions.
 
-## Aturan pencatatan
+## Recording Rules
 
-- Gunakan nomor berurutan `ADR-001-judul.md`; ID tidak dipakai ulang.
-- Status: Proposed, Accepted, Rejected, atau Superseded.
-- Tulis Context, Decision, Alternatives Considered, dan Consequences. Sertakan link requirement atau boundary yang melatarbelakanginya.
-- Jelaskan alasan alternatif ditolak dan biaya/risiko pilihan, bukan hanya nama library.
-- Keputusan baru yang menggantikan keputusan Accepted membuat ADR baru. Tandai ADR lama Superseded dan tautkan keduanya; pertahankan alasan historisnya.
-- Tambahkan link ADR di register ini dan overview ketika keputusan mengubah boundary sistem.
+- Use sequential filenames such as `ADR-001-title.md`; never reuse IDs.
+- Status: Proposed, Accepted, Rejected, or Superseded.
+- Include Context, Decision, Alternatives Considered, and Consequences. Link to the relevant requirements or boundaries.
+- Explain why alternatives were rejected and the costs/risks of the choice, beyond naming a library.
+- Replace an Accepted decision with a new ADR. Mark the original Superseded, link both records, and preserve the historical reasoning.
+- Link each ADR from this register and from the overview when it changes system boundaries.
 
 ## Format
 
 ```md
-# ADR-XXX — Judul Keputusan
+# ADR-XXX — Decision Title
 
 Status: Proposed
 
 ## Context
-Masalah, requirement, constraint, dan kondisi yang membutuhkan keputusan.
+The problem, requirements, constraints, and conditions requiring a decision.
 
 ## Decision
-Pilihan yang diajukan atau disepakati dan scope berlakunya.
+The proposed or accepted choice and its scope.
 
 ## Alternatives Considered
-Alternatif nyata beserta kelebihan, keterbatasan, dan alasan pemilihannya.
+Actual alternatives, their advantages and limitations, and the reasons for selection.
 
 ## Consequences
-Manfaat, biaya, risiko, serta perubahan yang diperlukan.
+Benefits, costs, risks, and required changes.
 ```

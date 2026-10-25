@@ -1,30 +1,30 @@
 # Engineering Conventions
 
-Status: Baseline untuk implementasi pertama. Struktur source, formatter, lint, dan nama script belum dipilih. Konvensi ini mengatur kode project; cara agent bekerja ada di [AGENTS.md](../../AGENTS.md).
+Status: Baseline for initial implementation. Application source structure, formatter, lint tooling, and script names have not been selected. This document governs project code; [AGENTS.md](../../AGENTS.md) governs agent working rules.
 
-## Repository dan Module Boundaries
+## Repository and Module Boundaries
 
-Ikuti boundary [architecture overview](../architecture/overview.md) dan simpan konteks produk/teknis menurut [pemilik dokumentasi](../README.md). Struktur source ditentukan setelah boundary aplikasi diketahui; jangan menetapkan layer atau service tanpa kebutuhan.
+Follow the [architecture boundaries](../architecture/overview.md) and [documentation ownership](../README.md). Select application source structure once boundaries are known; add layers or services only when needed.
 
-Tipe dan schema kontrak yang dibagikan tidak boleh mengimpor secret, koneksi database, atau implementasi server ke frontend. Modul aplikasi harus memiliki tanggung jawab yang jelas; pisahkan dependency lintas boundary melalui kontrak yang disepakati.
+Shared contract types and schemas must not import secrets, database connections, or server implementations into the frontend. Give application modules clear responsibilities and connect dependencies across boundaries through agreed contracts.
 
-## Naming dan Dependencies
+## Naming and Dependencies
 
-Gunakan istilah domain konsisten; buat glossary saat istilah perlu definisi bersama. Pilihan teknologi merujuk [stack guide](../javascript-typescript-stack.md). Jangan menduplikasi daftar stack di sini. Commit lockfile untuk dependency yang digunakan dan dokumentasikan script setelah tooling tersedia.
+Use consistent domain terminology; create a glossary when shared definitions are needed. Technology choices follow the [stack guide](../javascript-typescript-stack.md). Link to it rather than duplicating the stack list. Commit dependency lockfiles and document scripts once tooling is available.
 
-## Validation dan Error Handling
+## Validation and Error Handling
 
-Validasi input eksternal saat masuk ke boundary sistem. Tipe TypeScript saja tidak membuktikan data runtime valid. Simpan schema yang dibagikan pada boundary kontrak dan tautkan implementasinya dari API contract ketika tersedia.
+Validate external input at system boundaries. TypeScript types alone do not establish runtime validity. Keep shared schemas at contract boundaries and link their implementations from the API contract when available.
 
-Bedakan error input/domain yang diperkirakan dari kegagalan internal. Kontrak menentukan bentuk error publik; detail internal dan stack trace tidak dikirim ke pengguna. Pilihan pola effects/error mengikuti kebutuhan dan keputusan teknis project.
+Distinguish expected input/domain errors from internal failures. Contracts define public error shapes; internal details and stack traces are not sent to users. Select effects/error patterns according to project needs and technical decisions.
 
-## Security dan Logging Awal
+## Initial Security and Logging Rules
 
-- Secret tidak disimpan di source, dokumentasi, log, atau artifact tes. Dokumentasikan nama konfigurasi dan cara menyediakannya ketika integrasi tersedia.
-- Jangan log credential, session token, atau payload sensitif. Pilih metadata diagnosis sesuai klasifikasi data yang disepakati.
-- Jika fitur akses privat dibuat, authorization harus ditegakkan di boundary server untuk setiap resource; pembatasan UI saja tidak cukup.
-- Autentikasi, model akses, audit, retention, dan integrasi sensitif: TBD. Pindahkan detailnya ke `security.md` saat boundary tersebut ditentukan; jangan membuat sumber aturan ganda.
+- Keep secrets out of source, documentation, logs, and test artifacts. Document configuration names and provisioning methods when integrations exist.
+- Do not log credentials, session tokens, or sensitive payloads. Select diagnostic metadata according to agreed data classification.
+- Private-access features must enforce authorization at the server boundary for each resource. UI restrictions alone are insufficient.
+- Authentication, access models, auditing, retention, and sensitive integrations are TBD. Move details to `security.md` when those boundaries are defined, keeping a single source of rules.
 
 ## Code Review
 
-Perubahan perilaku menyertakan ID requirement dan bukti verifikasi sesuai [testing strategy](testing-strategy.md). Review mencakup kontrak lintas boundary, data sensitif, perubahan dependency, dan pembaruan dokumen pemilik. Workflow branch/release khusus: TBD; belum ada aturan CI atau merge yang diklaim aktif.
+Behavior changes include requirement IDs and verification evidence following the [testing strategy](testing-strategy.md). Review covers contracts across boundaries, sensitive data, dependency changes, and updates to owning documents. Project-specific branch/release workflows are TBD; no CI or merge rules are claimed active.
