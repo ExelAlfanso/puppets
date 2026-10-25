@@ -27,9 +27,11 @@ Examples: `feat: add invite flow`, `fix: handle empty workspace names`, `chore: 
 
 For every `feat`, `fix`, `docs`, or `chore` task:
 
+This workflow applies to this repository and every independent Git repository under `repos/`. Run Git commands in the target repository and use that repository's own `dev` and integration branches.
+
 1. Start from the latest `dev` branch and create a task branch named `<type>/<short-kebab-name>`, using the matching type prefix. Examples: `feat/invite-flow`, `fix/empty-name`, `docs/branching-workflow`, and `chore/update-lint`.
 2. Commit the task changes on that branch; do not push task changes directly to `dev` or the integration branch.
-3. Open a pull request from the task branch into the repository's integration branch. Use `master` when that is the repository's integration branch; use its configured default branch when it is named differently. This repository uses `main`.
+3. Open a pull request from the task branch into the repository's integration branch. Use `master` when that is the repository's integration branch; use its configured default branch when it is named differently. This repository uses `main`; Tinkerbin under `repos/` uses `master`.
 4. Before merging, review the complete PR diff yourself for scope, correctness, regressions, secrets, and needed documentation. Run the relevant checks and record their results in the PR. Merge only after the self-review is clear and required checks pass.
 
 If a repository does not yet have `dev`, create it from its current integration branch before starting task branches. Keep `dev` aligned with the integration branch after merges.

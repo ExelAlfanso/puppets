@@ -11,7 +11,7 @@ These documents are the source of truth for product and engineering information.
 | System boundaries and responsibilities | [Architecture overview](architecture/overview.md) | Repository baseline recorded; product architecture TBD |
 | Technology preferences | [JavaScript/TypeScript stack](javascript-typescript-stack.md) | Includes Rust/Tauri backends for large desktop applications; application stack undecided |
 | Technical decision rationale | [ADR index](architecture/decisions/README.md) | No application ADRs yet |
-| Code structure and engineering standards | [Conventions](engineering/conventions.md) | Baseline for initial implementation, including branch, PR, self-review, and merge rules |
+| Code structure and engineering standards | [Conventions](engineering/conventions.md) | Branch, PR, self-review, and merge rules for this repository and independent repos under `repos/` |
 | Verification approach | [Testing strategy](engineering/testing-strategy.md) | Strategy available; product tooling and CI TBD |
 | Coordination setup per repository/checkout | [Project orchestration](engineering/project-orchestration.md) | Local state per project, required to be ignored by Git |
 
