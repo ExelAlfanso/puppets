@@ -23,6 +23,17 @@ Use `<type>: <short description>` for commit subjects and pull request titles. C
 
 Examples: `feat: add invite flow`, `fix: handle empty workspace names`, `chore: update lint config`, and `docs: clarify repository conventions`.
 
+## Branching and Pull Requests
+
+For every `feat`, `fix`, `docs`, or `chore` task:
+
+1. Start from the latest `dev` branch and create a task branch named `<type>/<short-kebab-name>`, using the matching type prefix. Examples: `feat/invite-flow`, `fix/empty-name`, `docs/branching-workflow`, and `chore/update-lint`.
+2. Commit the task changes on that branch; do not push task changes directly to `dev` or the integration branch.
+3. Open a pull request from the task branch into the repository's integration branch. Use `master` when that is the repository's integration branch; use its configured default branch when it is named differently. This repository uses `main`.
+4. Before merging, review the complete PR diff yourself for scope, correctness, regressions, secrets, and needed documentation. Run the relevant checks and record their results in the PR. Merge only after the self-review is clear and required checks pass.
+
+If a repository does not yet have `dev`, create it from its current integration branch before starting task branches. Keep `dev` aligned with the integration branch after merges.
+
 ## Validation and Error Handling
 
 Validate external input at system boundaries. TypeScript types alone do not establish runtime validity. Keep shared schemas at contract boundaries and link their implementations from the API contract when available.
@@ -38,4 +49,4 @@ Distinguish expected input/domain errors from internal failures. Contracts defin
 
 ## Code Review
 
-Behavior changes include requirement IDs and verification evidence following the [testing strategy](testing-strategy.md). Review covers contracts across boundaries, sensitive data, dependency changes, and updates to owning documents. Project-specific branch/release workflows are TBD; no CI or merge rules are claimed active.
+Behavior changes include requirement IDs and verification evidence following the [testing strategy](testing-strategy.md). Review covers contracts across boundaries, sensitive data, dependency changes, and updates to owning documents. Repository-specific CI and release automation remain TBD; use the [branching and pull request workflow](#branching-and-pull-requests) for changes.
