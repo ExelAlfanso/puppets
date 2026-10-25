@@ -12,6 +12,17 @@ Shared contract types and schemas must not import secrets, database connections,
 
 Use consistent domain terminology; create a glossary when shared definitions are needed. Technology choices follow the [stack guide](../javascript-typescript-stack.md). Link to it rather than duplicating the stack list. Commit dependency lockfiles and document scripts once tooling is available.
 
+## Commit and Pull Request Titles
+
+Use `<type>: <short description>` for commit subjects and pull request titles. Choose one of these lowercase prefixes:
+
+- `feat:` for a new capability.
+- `fix:` for a bug correction.
+- `chore:` for maintenance that does not change product behavior.
+- `docs:` for documentation changes.
+
+Examples: `feat: add invite flow`, `fix: handle empty workspace names`, `chore: update lint config`, and `docs: clarify repository conventions`.
+
 ## Validation and Error Handling
 
 Validate external input at system boundaries. TypeScript types alone do not establish runtime validity. Keep shared schemas at contract boundaries and link their implementations from the API contract when available.

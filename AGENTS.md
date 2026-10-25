@@ -28,6 +28,7 @@ The worker reports its output and evidence but cannot alone mark its task `done`
 
 - Stay within assigned file ownership. Ask the orchestrator to change scope or dependencies before editing outside it.
 - Do not overwrite user work or existing documentation. Keep source changes tied to the active task.
+- Commit or push only when the user explicitly requests that action. Permission to commit does not also authorize pushing.
 - Do not add databases, queues, workflow engines, or extra agent roles to coordinate this workflow without a demonstrated need.
 - Put stable context first when constructing agent prompts: this file, the role file, then task-specific inputs and latest feedback. Include enough context for correctness without dumping the repository.
 - Use Markdown for human-readable coordination. Use YAML frontmatter only for task metadata that benefits from structure; use JSON for tool-produced machine data when needed.
