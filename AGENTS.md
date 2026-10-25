@@ -27,7 +27,7 @@ The worker reports its output and evidence but cannot alone mark its task `done`
 - Ponytail and Caveman apply only to frontend/backend implementation workers and explicitly assigned worker agents. Follow `.agents/worker-skills.md` for activation and reporting. Do not apply these modes to the orchestrator or other specialist roles, and do not expose their snapshots through `.agents/skills/`.
 
 - Stay within assigned file ownership. Ask the orchestrator to change scope or dependencies before editing outside it.
-- For each `feat`, `fix`, `docs`, or `chore` task, follow the [branching and pull request workflow](docs/engineering/conventions.md#branching-and-pull-requests): branch from current `dev`, use `<type>/<short-kebab-name>`, and merge through a self-reviewed PR to the repository's default integration branch.
+- For each `feat`, `fix`, `docs`, or `chore` task, follow the [branching and pull request workflow](docs/engineering/conventions.md#branching-and-pull-requests): branch from current `dev`, use `<type>/<short-kebab-name>`, and merge through a self-reviewed PR to the repository's integration branch. This also applies to each independent repository under `repos/`; use that checkout's own `dev` and integration branch.
 - Do not overwrite user work or existing documentation. Keep source changes tied to the active task.
 - Commit or push only when the user explicitly requests that action. Permission to commit does not also authorize pushing.
 - Do not add databases, queues, workflow engines, or extra agent roles to coordinate this workflow without a demonstrated need.
