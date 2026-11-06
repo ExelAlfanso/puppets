@@ -20,3 +20,8 @@ No active task blockers. Product implementation awaits the open questions in `do
 ## Latest Decision
 
 Keep orchestration file-based. Use task dependencies as the execution graph and compare expected work with actual outputs before acceptance. Add product architecture and implementation tasks only when requirements exist.
+
+## Active Work
+
+- `DOC-2026-11-05-01`: completed on `docs/modular-monolith-monorepo`; define reusable modular-monolith monorepo guidance and add the validated frontend-slicing skill. Target project work is tracked separately in `repos/tanpanama-studio/.orchestration/`.
+- Existing unrelated local changes remain untouched.

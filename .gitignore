@@ -1,5 +1,4 @@
 /dist/
-/repos/
 /node_modules/
 
 # Local agent coordination state

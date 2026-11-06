@@ -4,7 +4,7 @@ Skills are grouped by topic for browsing. The installed copies in `.agents/skill
 
 - `vue/`: Vue and Vue ecosystem
 - `react/`: React and composition patterns
-- `fe/`: General frontend design and interface guidelines
+- `fe/`: General frontend design, screenshot-based slicing, and interface guidelines
 - `be/`: Backend architecture, feature delivery, Node.js patterns, and security
 - `qa/`: QA skills for reviewing tests, coverage, risks, and release evidence; role guidance is in `.agents/reviewer.md`
 - `worker/`: Ponytail and Caveman for implementation workers only; see [worker policy](../.agents/worker-skills.md)
